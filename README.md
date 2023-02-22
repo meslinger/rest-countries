@@ -24,7 +24,7 @@ Users should be able to:
 - Toggle the color scheme between light and dark mode *(optional)*
 
 ### Links
-- Live Site: Netlify - Coming Soon
+- Live Site: [Netlify](https://tubular-naiad-rest-countries.netlify.app/)
 
 ## Process
 
