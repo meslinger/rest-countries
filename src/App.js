@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Country from './routes/country';
+import Home from './routes/home';
+
+import { getData } from './utils/data.utils';
+
 import './App.css';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [countryData, setCountryData] = useState([]);
+
+  useEffect(() => {
+      const fetchCountries = async () => {
+          const countryData = await getData('https://restcountries.com/v3.1/all');
+
+          setCountryData(countryData);
+          
+          setIsLoading(false);
+      }
+
+      fetchCountries();
+  }, []);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/">
+        <Route index element={ <Home data={ countryData } isLoading={ isLoading } /> } />
+        <Route path="/:country" element={ <Country data={ countryData } isLoading={ isLoading } /> } />
+      </Route>
+    </Routes>
+  )
 }
 
 export default App;
