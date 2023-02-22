@@ -66,7 +66,13 @@ const Home = ({ data, isLoading }) => {
                         </main>
                     </>
                 ) : (
-                    <>Loading</>
+                    <div className="left-0 top-0 w-full h-screen fixed bg-gray-500 opacity-100">
+                        <div className="left-0 top-0 w-full h-screen absolute">
+                            <div className="left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2">
+                                <span className="w-20 h-20 inline-block animate-spin rounded-full" style={{ 'border': 'solid 2px rgb(255, 255, 255, 0.05)' , 'borderTop': 'solid 2px rgb(255, 255, 255, 1)' }}></span>
+                            </div>
+                        </div>
+                    </div>
                 )
             }
         </div>

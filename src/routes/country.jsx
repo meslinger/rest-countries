@@ -41,7 +41,13 @@ const Country = ({ data, isLoading }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {
                         isLoading ? (
-                            <div className="md:col-span-2"><span className="text-3xl font-bold">Loading...</span></div>
+                            <div className="left-0 top-0 w-full h-screen fixed bg-gray-500 opacity-100">
+                                <div className="left-0 top-0 w-full h-screen absolute">
+                                    <div className="left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2">
+                                        <span className="w-20 h-20 inline-block animate-spin rounded-full" style={{ 'border': 'solid 2px rgb(255, 255, 255, 0.05)' , 'borderTop': 'solid 2px rgb(255, 255, 255, 1)' }}></span>
+                                    </div>
+                                </div>
+                            </div>
                         ) : (
                             currentCountry === null || currentCountry === undefined ? (
                                 <div className="text-3xl font-bold md:col-span-2">No country found.</div>

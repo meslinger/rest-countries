@@ -33,6 +33,7 @@ Users should be able to:
     - Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [Countries API](https://restcountries.com/)
 
 ## Author
