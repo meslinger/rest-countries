@@ -29,11 +29,11 @@ Users should be able to:
 ## Process
 
 ### Built With
-    - [ReactJS](https://reactjs.org/)
-        - Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-    - [Tailwind CSS](https://tailwindcss.com/)
-    - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
-    - [Countries API](https://restcountries.com/)
+- [ReactJS](https://reactjs.org/)
+    - Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
+- [Countries API](https://restcountries.com/)
 
 ## Author
 - Github - [Michael Eslinger](https://github.com/meslinger)
