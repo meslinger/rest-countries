@@ -46,6 +46,7 @@ const Home = ({ data, isLoading }) => {
                 (regions.length > 1 && countryNames.length > 0) ? (
                     <>
                         <section>
+                            <h2 className="sr-only">Search and Filter section</h2>
                             <div className="sticky mt-8">
                                 <div className="mx-auto max-w-[1440px] px-4 md:px-8 flex flex-col gap-4 md:flex-row md:items-center justify-between">
                                     <SearchBox countries={ countryNames } countryFilter={ filterCountry } />
