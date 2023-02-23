@@ -45,12 +45,14 @@ const Home = ({ data, isLoading }) => {
             {
                 (regions.length > 1 && countryNames.length > 0) ? (
                     <>
-                        <div className="sticky mt-8">
-                            <div className="mx-auto max-w-[1440px] px-4 md:px-8 flex flex-col gap-4 md:flex-row md:items-center justify-between">
-                                <SearchBox countries={ countryNames } countryFilter={ filterCountry } />
-                                <Filter listItems={ regions } regionFilter={ filterRegion } />
+                        <section>
+                            <div className="sticky mt-8">
+                                <div className="mx-auto max-w-[1440px] px-4 md:px-8 flex flex-col gap-4 md:flex-row md:items-center justify-between">
+                                    <SearchBox countries={ countryNames } countryFilter={ filterCountry } />
+                                    <Filter listItems={ regions } regionFilter={ filterRegion } />
+                                </div>
                             </div>
-                        </div>
+                        </section>
                         <main>
                             <div className="mx-auto max-w-[1440px] px-4 md:px-8 py-8">
                                 {

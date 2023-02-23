@@ -54,7 +54,7 @@ const Country = ({ data, isLoading }) => {
                             ) : (
                                     <>
                                         <div>
-                                            <img src={currentCountry.flags.svg} alt={currentCountry.flags.alt} />
+                                            <img src={currentCountry.flags.svg} alt={ currentCountry.flags.alt && currentCountry.flags.alt !== '' ? currentCountry.flags.alt : 'Flag of ' + currentCountry.name.common } />
                                         </div>
                                         <div>
                                             <h2 className="font-bold text-2xl pb-8 -mt-1.5">{ currentCountry.name.common }</h2>

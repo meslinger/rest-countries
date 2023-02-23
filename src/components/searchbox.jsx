@@ -20,6 +20,7 @@ const SearchBox = ({ countries, countryFilter }) => {
         <div className="relative w-full cursor-default p-3 overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm dark:bg-dmDarkBlue-700">
           <Combobox.Input placeholder='Search for a country...' className="w-full border-none py-2 px-10 text-sm text-lmDarkBlue-900 leading-5 focus:outline-transparent focus:ring-0 dark:bg-dmDarkBlue-700 dark:text-white focus-visible:outline-none focus-visible:border-none" displayValue={(country) => country} onChange={(event) => setQuery(event.target.value)} />
           <Combobox.Button className="absolute inset-y-0 left-0 flex items-center pl-4 pr-2">
+            <span className="sr-only">Search for a country</span>
             <FaSearch className="h-5 w-5 text-gray-400" aria-hidden="true" />
           </Combobox.Button>
         </div>
